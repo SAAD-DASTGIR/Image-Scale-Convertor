@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- <h2>Digital Image Processing Lab Project</h2>
+  <h4>Group Members</h4>
+  <h4>Saad Dastgir</h4>
+  <h4>Muhammad Umair</h4>
+  <h4>Hassan Baig</h4>
+  <h4>Ahsan Abbasi> -->
+
+  <div class="canvas-container">
+    <label class="file-loader custom-button" for="imageLoader">
+      Upload Picture
+      <input type="file" id="imageLoader" name="imageLoader" />
+    </label>
+    <canvas id="imageCanvas"></canvas>
+  </div>
+
+  <div class="control-group">
+    <div class="button-group">
+      <button id="grayscaleFilter" class="custom-button">Grayscale</button>
+      <button id="blackWhiteFilter" class="custom-button">Black & White</button>
+      <button id="negativeFilter" class="custom-button">Negative</button>
+      <button id="thresholdFilter" class="custom-button">Threshold</button>
+      <button id="blurFilter" class="custom-button">Blur</button>
+    </div>
+
+    <div class="control-group">
+      <label for="brightness">Brightness:</label>
+      <input type="range" id="brightness" min="-100" max="100" value="0" class="slider" />
+    </div>
+
+    <div class="control-group">
+      <label for="contrast">Contrast:</label>
+      <input type="range" id="contrast" min="-100" max="100" value="0" class="slider" />
+    </div>
+
+    <div class="control-group">
+      <label for="opacity">Opacity:</label>
+      <input type="range" id="opacity" min="0" max="100" value="100" class="slider" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
